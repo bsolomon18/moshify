@@ -828,10 +828,15 @@ a {
   padding: 2rem;
   border-bottom: 1px solid #393939;
 }
+
 .footer__section ul {
   margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
 }
 .footer__heading {
+  margin: 0.5rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -839,6 +844,11 @@ a {
 .footer__brand {
   margin-top: 5rem;
   text-align: center;
+}
+
+.footer__brand img{
+  width: 100%;
+  max-width: 230px;
 }
 
 .footer__copyright {
