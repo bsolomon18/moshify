@@ -1,3 +1,6 @@
+/* styles.css */
+@import 'normalize.css';
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -202,7 +205,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   margin: 1rem 0;
   text-align: center;
   text-decoration: none;
@@ -232,7 +235,7 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #afa5d7;
+  background:  #1e076f;
 }
 .btn--accent {
   background: var(--color-accent);
@@ -294,6 +297,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -532,13 +536,26 @@ a {
 
 /* CALLOUTS */
 .callout {
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 4rem;
 }
 
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
+}
+
+.callout.callout--primary {
+  width: 1140px;
+  height: 195px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1140px) {
+  .callout.callout--primary {
+    width: 90%; /* Fluid width on smaller screens */
+    height: auto; /* Adjusts height based on content */
+  }
 }
 
 .callout__heading {
@@ -740,8 +757,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
