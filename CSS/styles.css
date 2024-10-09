@@ -1,5 +1,5 @@
 /* styles.css */
-@import 'normalize.css';
+@import './normalize.css';
 
 :root {
   --color-primary: #2584ff;
